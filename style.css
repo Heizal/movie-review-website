@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+/*BODY SECTION*/
+* {
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background-image: url(./images/scoob\ filler\ image.jpeg);
+    background-position:top;
+    background-size: cover;
+    font-family: 'Josefin Sans',sans-serif;
+    background-repeat:inherit;
+}
+
+p {
+    margin: 0.5em 0 0.5em;
+}
+
+nav a:visited,
+nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* SEARCH BAR SECTION*/
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+
+}
+
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+nav ul div.items a:hover{
+    color: cyan;
+
+}
+
+
+nav ul .search-icon{
+  height: 35px; 
+  width: 240px; 
+  align-self: center;
+  display: flex;
+  background: transparent;
+  border-radius: 5px;
+}
+
+nav ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover{
+    background: #a6a6a6;
+
+}
+
+nav ul .search-icon .icon span{
+    color: black;
+    font-size: 20px;
+}
+
+
+
+
+/*MOVIES AND SERIES SECTION*/
+
+.movie-details{
+    margin: 3% 0;
+}
+
+.left-box{
+    color: white;
+    margin: 15px 0;
+    padding: 20px;
+
+}
+
+.casting img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.left-box a{
+    text-decoration: none !important;
+    border-radius: 30px;
+    padding: 7px 10px;
+    margin-top: 35px;
+    color: white !important;
+    background: rgb(71, 238, 154);
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*.download-btn{
+    border: 1px solid white !important;
+}*/
+
+.series h3{
+    margin-top: 50px;
+    color: white;
+}
+
+.series img{
+    margin-top: 15px;
+    cursor:pointer;
+    transition: 1s;
+    /*float:left; 
+    width: 100%;
+    margin:0 1%;*/
+    max-width: 200%;
+    max-height: 200%;
+    display:block;
+    margin: 15 1%;
+}
+
+.series img:hover{
+    transform: translateY(-10px);
+}
+
+/*SOCIAL MEDIA SECTION*/
+
+ul {
+    list-style: none;
+    display: flex
+}
+
+.social-icon {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 27px;
+    margin-right: 11px;
+    cursor: pointer
+}
+
+.social-twitter {
+    background-color: #55acee
+}
+
+.social-facebook {
+    background-color: #3b5999
+}
+
+.social-linkedin {
+    background-color: #0077B5
+}
+
+.social-instagram {
+    background-color: #dd4b39
+}
+
+.social-youtube {
+    background-color: #dd4b39;
+}
+
+.social-icon i {
+    transition: 0.4s all
+}
+
+.social-icon:hover i {
+    transform: scale(1.4)
+}
+/*FOOTER SECTION*/
+
+footer {
+    padding: 15px;
+    background-color: transparent;
+    text-align: center;
+    color: cornsilk;
+    width: 100;  
+    
+}
+
+.checked{
+    color: orangered;
+}
+
+/* Mobile view*/
+
+@media (max-width: 600px){
+    .social-icon{
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .series img{
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .series h3{
+        margin-top: 30px;
+        color: white;
+    }
+
+    .casting img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .left-box a{
+        border-radius: 30px;
+        padding: 4px 8px;
+        margin-top: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav ul li.logo{
+        font-size: 4px;
+        font-weight: 100;
+        margin-right: 270px;
+    }
+    
+    nav ul div.items{
+        padding: 0 25px;
+        display:block;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    
+    nav ul div.items a{
+        text-decoration: none;
+        font-size: 15px;
+        padding: 0 12px;
+    }
+     
+    nav ul .search-icon{
+      height: 30px; 
+      width: 200px; 
+      align-self: center;
+      display: flex;
+      background: transparent;
+      border-radius: 5px;
+      position: absolute;
+      margin-bottom: 50px;
+      margin-left: 80px;
+    }
+    
+    nav ul .search-icon input{
+        height: 100%;
+        width: 150px;
+        font-size: 13px;
+    }
+    nav ul .search-icon .icon span{
+        font-size: 18px;
+    }
+    
+
+
+
+
+
+   
+}
+
